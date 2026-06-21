@@ -1,120 +1,388 @@
 <!DOCTYPE html>
-
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Ropa Fashion Shushufindi</title>
+
+    <title>Fashion Shushufindi Boutique Femenina</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff5f8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff4fa3, #d63384);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #d63384;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section {
+            background: white;
+            margin-top: 25px;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+        }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn-personalizado {
+            background-color: #d63384;
+            color: white;
+        }
+
+        .btn-personalizado:hover {
+            background-color: #b6256f;
+            color: white;
+        }
+
+        aside {
+            background-color: #ffe4ef;
+            padding: 25px;
+            border-radius: 20px;
+            margin-top: 25px;
+        }
+
+        footer {
+            background-color: #d63384;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media(max-width:768px) {
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            iframe,
+            video,
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
 </head>
+
 <body>
 
-```
-<header>
-    <h1>Tienda de Ropa Fashion Shushufindi</h1>
-</header>
+    <header>
+        <h1>Fashion Shushufindi Boutique Femenina</h1>
+        <p>Moda elegante y moderna para mujeres con estilo</p>
 
-<nav>
-    <a href="#inicio">Inicio</a> |
-    <a href="#quienes">Quiénes Somos</a> |
-    <a href="#servicios">Productos</a> |
-    <a href="#contacto">Contacto</a>
-</nav>
+        <a href="#contacto" class="btn btn-light mt-3">
+            Contáctanos
+        </a>
+    </header>
 
-<main>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-    <section id="inicio">
-        <h2>Inicio</h2>
-        <p>
-            Bienvenidos a Fashion Shushufindi, una tienda dedicada a la venta
-            de ropa moderna para niños, jóvenes y adultos. Nuestro objetivo es
-            ofrecer prendas de calidad, comodidad y estilo para toda la familia,
-            brindando una excelente atención a nuestros clientes.
-        </p>
-    </section>
+        <div class="container">
 
-    <section id="quienes">
-        <h2>Quiénes Somos</h2>
+            <a class="navbar-brand" href="#">Fashion</a>
 
-        <article>
-            <p>
-                Fashion Shushufindi es un emprendimiento dedicado a la venta de ropa
-                y accesorios para hombres, mujeres y niños en el cantón Shushufindi.
-                Nuestro proyecto nace con el propósito de ofrecer prendas modernas,
-                cómodas y de excelente calidad a precios accesibles para toda la
-                comunidad. Trabajamos constantemente para mantenernos actualizados
-                con las últimas tendencias de moda y satisfacer las necesidades de
-                nuestros clientes. Además, buscamos brindar una experiencia de compra
-                agradable, basada en la confianza, el respeto y la atención
-                personalizada. Nuestro compromiso es convertirnos en una de las
-                principales opciones para quienes buscan vestir bien, sentirse cómodos
-                y adquirir productos de calidad dentro del cantón Shushufindi y sus
-                alrededores.
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quienes">Quiénes Somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main class="container">
+
+        <section id="inicio">
+
+            <h2>Inicio</h2>
+
+            <p class="text-center">
+                Bienvenida a Fashion Shushufindi Boutique Femenina. Somos una tienda especializada
+                en ropa para mujeres que buscan elegancia, comodidad y las últimas tendencias de moda.
+                Nuestro compromiso es ofrecer prendas de calidad que resalten la belleza y personalidad
+                de cada cliente.
             </p>
 
-            <img src="imagenes/ropa.jpg" alt="Tienda de ropa" width="400">
-        </article>
-    </section>
+            <div class="text-center">
+                <button class="btn btn-primary">
+                    Ver Colección
+                </button>
+            </div>
 
-    <section id="servicios">
-        <h2>Productos</h2>
+        </section>
 
-        <ul>
-            <li>Camisetas para hombres y mujeres</li>
-            <li>Pantalones y jeans</li>
-            <li>Vestidos casuales</li>
-            <li>Ropa deportiva</li>
-            <li>Chaquetas y suéteres</li>
-            <li>Accesorios de moda</li>
-        </ul>
-    </section>
+        <section id="quienes">
 
-    <section id="contacto">
-        <h2>Contacto</h2>
+            <div class="row align-items-center">
 
-        <p>Correo: fashionshushufindi@gmail.com</p>
-        <p>Teléfono: 0991234567</p>
-        <p>Dirección: Shushufindi, Sucumbíos, Ecuador</p>
+                <div class="col-md-7">
+
+                    <h2>Quiénes Somos</h2>
+
+                    <article>
+
+                        <p>
+                            Fashion Shushufindi Boutique Femenina es un emprendimiento dedicado a la
+                            comercialización de ropa y accesorios exclusivos para mujeres. Nuestro proyecto
+                            nace con el propósito de ofrecer prendas modernas, elegantes y cómodas que se
+                            adapten a diferentes estilos y ocasiones. Trabajamos constantemente para mantenernos
+                            actualizados con las tendencias de moda y brindar productos de excelente calidad.
+                            Nuestra prioridad es ofrecer una atención personalizada y una experiencia de compra
+                            agradable para cada cliente. Buscamos convertirnos en una boutique reconocida en
+                            Shushufindi por nuestra variedad de productos, precios accesibles y compromiso con
+                            la satisfacción de quienes confían en nosotros.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <div class="col-md-5 text-center">
+
+                    <img src="imagenes/ropa.jpg"
+                        alt="Moda femenina"
+                        class="img-fluid rounded shadow">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="productos">
+
+            <h2>Nuestros Productos</h2>
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <div class="card p-3 m-2 text-center">
+
+                        <h4>Vestidos Elegantes</h4>
+
+                        <p>
+                            Diseños modernos para eventos especiales y ocasiones casuales.
+                        </p>
+
+                        <button class="btn btn-primary">
+                            Ver Más
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card p-3 m-2 text-center">
+
+                        <h4>Blusas Modernas</h4>
+
+                        <p>
+                            Variedad de estilos y colores para cada ocasión.
+                        </p>
+
+                        <button class="btn btn-primary">
+                            Ver Más
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card p-3 m-2 text-center">
+
+                        <h4>Jeans para Mujer</h4>
+
+                        <p>
+                            Comodidad, calidad y moda en una sola prenda.
+                        </p>
+
+                        <button class="btn btn-primary">
+                            Ver Más
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <ul>
+                <li>Vestidos elegantes</li>
+                <li>Blusas modernas</li>
+                <li>Jeans femeninos</li>
+                <li>Conjuntos casuales</li>
+                <li>Accesorios de moda</li>
+                <li>Ropa para toda ocasión</li>
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>Video Promocional</h2>
+
+            <div class="text-center">
+
+                <video width="700" controls class="img-fluid">
+                    <source src="videos/Video de ropa.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+        </section>
+
+        <section id="contacto">
+
+            <h2>Contacto</h2>
+
+            <p><strong>Correo:</strong> fashionshushufindi@gmail.com</p>
+            <p><strong>Teléfono:</strong> 0991234567</p>
+            <p><strong>Dirección:</strong> Shushufindi, Sucumbíos, Ecuador</p>
+
+            <p>
+                <a href="https://www.facebook.com" target="_blank" class="btn btn-primary">
+                    Facebook
+                </a>
+
+                <a href="https://www.instagram.com" target="_blank" class="btn btn-danger">
+                    Instagram
+                </a>
+            </p>
+
+            <h3 class="mt-4">Formulario de Contacto</h3>
+
+            <form>
+
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Asunto</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Mensaje</label>
+                    <textarea class="form-control" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-personalizado">
+                    Enviar Mensaje
+                </button>
+
+            </form>
+
+        </section>
+
+        <aside>
+
+            <h3>Promociones Especiales</h3>
+
+            <p>
+                15% de descuento en compras superiores a $50.
+            </p>
+
+            <p>
+                Horario de atención:
+                Lunes a Sábado de 08h00 a 18h00.
+            </p>
+
+        </aside>
+
+    </main>
+
+    <footer>
 
         <p>
-            Redes sociales:
-            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </p>
-    </section>
-
-    <section>
-        <h2>Video Promocional</h2>
-
-        <iframe width="560" height="315"
-            src="videos/Video de ropa.mp4"
-            title="Video de ropa"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-    </section>
-
-    <aside>
-        <h3>Información Adicional</h3>
-
-        <p>
-            Horario de atención: Lunes a Sábado de 08:00 a 18:00.
+            Desarrollado por Bella Morocho |
+            Desarrollo de Aplicaciones Web |
+            2026
         </p>
 
-        <p>
-            Promoción especial: 15% de descuento en compras superiores a $50.
-        </p>
-    </aside>
+    </footer>
 
-</main>
-
-<footer>
-    <p>
-        Desarrollado por Bella Morocho |
-        Desarrollo de Aplicaciones Web |
-        2026
-    </p>
-</footer>
-```
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
